@@ -37,3 +37,8 @@ exports.askQuestion = async (req, res) => {
     }
 
 }
+
+exports.getUsers = async (req, res) => {
+    const users = await  User.find({});
+    res.json(users)
+}

@@ -10,7 +10,8 @@
         <title>Kerious</title>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans|Hind|Bree+Serif|Roboto|Mina|Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="/assets/css/dashboard.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- Landing Page Core -->
@@ -29,17 +30,42 @@
         <body>
 
             <header id="_main" class="jumbotron">
-                <h1 id="logo-text" class="display-4"><i class="fa fa-stethoscope"></i> KERIOUS</h1>
-                <p class="lead">A dead simple web service that allows you to ask questions anonymously.</p>
-                <p class="lead">We just like CuriosCat, but with bad UI and less features</p>
-                <p class="lead">No Sellout Whatsoever <i class="fa fa-smile-o"></i></p>
-                <hr class="my-2">
-                <button type="button" class="btn btn-lg btn-outline-info" @click="btnToA('login')">Login</button>
-                <button type="button" class="btn btn-lg btn-fc3" @click="btnToA('signup')">Signup</button>
+                <div class="row">
+                    <div class="col-md-8 alignLeft">
+                        <h1 id="logo-text" class="display-4"><i class="fa fa-stethoscope"></i> KERIOUS</h1>
+                        <p class="lead">A dead simple web service that allows you to ask questions anonymously.</p>
+                        <p class="lead">We just like CuriosCat, but with bad UI and less features.</p>
+                        <p class="lead">No Sellout Whatsoever <i class="fa fa-smile-o"></i></p>
+                        <hr class="my-2">
+                        <button type="button" class="btn btn-lg btn-outline-info" @click="btnToA('login')">Login</button>
+                        <button type="button" class="btn btn-lg btn-fc3" @click="btnToA('signup')">Signup</button>
+                    </div>
+                    <div class="col-md-3 alignLeft">
+                        <div class="form-group">
+                            <label class="form-label" id="searchInput">Search User </label>
+                            <div class="input-icon mb-3">
+                                <span class="input-icon-addon">
+                                    <i class="fe fe-user"></i>
+                                </span>
+                                <input v-model="searchBox" type="text" class="form-control" placeholder="Search for..." v-on:change="reaggregate()">
+                                <span class="input-icon-addon">
+                                <i class="fe fe-search"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div v-for="user in passedSearch" class="alert alert-avatar alert-success alert-dismissible">
+                            <a :href="`${user.userProfileUrl}`"><span class="avatar" :style="`background-image: url(${user.userAvatarUrl})`"></span>
+                            {{ user.username }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </header>
         
 
             <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+
             <script type="text/javascript" src="./index.js"></script>
         </body>
 

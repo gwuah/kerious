@@ -5,8 +5,9 @@ const authController = require("../controllers/authController");
 const appController = require("../controllers/appController");
 
 
-router.post("/register", authController.registerUser)
-router.post("/ask", appController.askQuestion)
+router.post("/register", authController.registerUser);
+router.get("/users", appController.getUsers);
+router.post("/ask", appController.askQuestion);
 
 // export the router
 module.exports = router;

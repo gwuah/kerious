@@ -12,13 +12,10 @@ vm = new Vue({
             window.location.href = `/${arg}`
         },
         reaggregate() {
+            if (this.searchBox == "") return
             this.passedSearch = [];
             const regex = new RegExp(this.searchBox);
-            this.passedSearch = this.users.filter(user => {
-                console.log(regex, user, regex.test(user.username))
-                console.log(regex.test(user.username))
-                // regex.test(user.username) == true
-            });
+            this.passedSearch = this.users.filter(user => regex.test(user.username) == true );
         }
     },
 

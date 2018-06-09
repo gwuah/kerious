@@ -18852,3 +18852,15 @@ svg {
 .fe-zoom-out:before {
   content: "\ea06";
 }
+
+
+/* login page */
+
+.mina {
+  font-family: Mina;
+}
+
+.our_logo {
+  font-family: Mina;
+  font-size: 30px;
+}

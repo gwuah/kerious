@@ -31,7 +31,8 @@
 
             <header id="_main" class="jumbotron">
                 <div class="row">
-                    <div class="col-md-8 alignLeft">
+                    <div class="com-md-2" style="visibility: hidden">dfdfddddddddd</div>
+                    <div class="col-md-7 alignLeft">
                         <h1 id="logo-text" class="display-4"><i class="fa fa-stethoscope"></i> KERIOUS</h1>
                         <p class="lead">A dead simple web service that allows you to ask questions anonymously.</p>
                         <p class="lead">We just like CuriosCat, but with bad UI and less features.</p>
@@ -40,14 +41,14 @@
                         <button type="button" class="btn btn-lg btn-outline-info" @click="btnToA('login')">Login</button>
                         <button type="button" class="btn btn-lg btn-fc3" @click="btnToA('signup')">Signup</button>
                     </div>
-                    <div class="col-md-3 alignLeft">
+                    <div id="searchColumn" class="col-md-3 alignLeft">
                         <div class="form-group">
-                            <label class="form-label" id="searchInput">Search User </label>
+                            <label class="form-label" id="searchInput">Search For User</label>
                             <div class="input-icon mb-3">
                                 <span class="input-icon-addon">
                                     <i class="fe fe-user"></i>
                                 </span>
-                                <input v-model="searchBox" type="text" class="form-control" placeholder="Search for..." v-on:change="reaggregate()">
+                                <input v-model="searchBox" type="text" class="form-control" placeholder="Search for..." v-on:keyup="reaggregate()">
                                 <span class="input-icon-addon">
                                 <i class="fe fe-search"></i>
                                 </span>

@@ -42,3 +42,12 @@ exports.getUsers = async (req, res) => {
     const users = await  User.find({});
     res.json(users)
 }
+
+exports.loginPage = async (req, res) => {
+    res.render("login")
+}
+
+exports.signupPage = async (req, res) => {
+    console.log("user wants to signup")
+    res.render("signup")
+}

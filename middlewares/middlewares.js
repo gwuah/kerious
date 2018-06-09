@@ -1,0 +1,1 @@
+ exports.productName = "sample-file" 

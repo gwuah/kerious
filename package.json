@@ -1,0 +1,30 @@
+{
+    "keywords": ["anonymous", "question", "answer"],
+    "author": "gwuah",
+    "main": "index.js",
+    "version": "1.0.0",
+    "dependencies":{
+        "mongoose": "^5.0.12",
+        "bcryptjs": "^2.4.3",
+        "bluebird": "^3.5.1",
+        "express": "^4.16.3",
+        "body-parser": "^1.18.2",
+        "chalk": "^2.3.2",
+        "path": "^0.12.7",
+        "pug": "^2.0.3",
+        "cookie-parser": "^1.4.3",
+        "jsonwebtoken": "^8.2.1",
+        "md5": "^2.2.1",
+        "cors": "^2.8.4",
+        "dotenv": "^5.0.1",
+        "socket.io": "^2.1.1",
+        "socket.io-client": "^2.1.1",
+        "validator": "^9.4.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "license": "MIT",
+    "name": "kerious",
+    "description": "A minimal version of curious cat"
+}

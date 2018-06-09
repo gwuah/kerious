@@ -1,5 +1,5 @@
 const _ = require("./underscore");
-const User = require("../models/User");
+// const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 
 
@@ -38,6 +38,16 @@ exports.hashPassword = (password) => {
 				if (err) { rej(err) }
 				res(hash)
 			})
+		})
+	})
+}
+
+exports.comparePassword = (password, hashedPassword) => {
+	return new Promise((res, rej) => {
+		bcrypt.compare(password, hashedPassword, (err, status) => {
+			if (err) { rej(err) }
+			// console.log(status);
+			res(status)
 		})
 	})
 }

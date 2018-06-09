@@ -18863,4 +18863,15 @@ svg {
 .our_logo {
   font-family: Mina;
   font-size: 30px;
+  color: white;
+}
+
+.sub-text-btm {
+  color: white
+}
+
+#authPage {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../../img/jumbo-5.jpg);
+  background-size: cover;
 }

@@ -15,31 +15,33 @@ head
   link(rel="stylesheet" href="/assets/css/dashboard.css")
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Mina|Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&subset=latin-ext')
   link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-.page.mina
+#authPage.page.mina
   .page-single
     .container
-      #view.row
-        template()
+      .row
           .col.col-login.mx-auto
+            .text-center.mb-6.our_logo
+              i.fa.fa-stethoscope
+              |  KERIOUS
             .text-center.mb-6
               if err
                 .alert.alert-danger.alert-dismissible
                   button.close(type="button" data-dismiss="alert")
-                  span Email already taken.
+                  span #{err}.
             form.card(action='/signup' method='post')
               .card-body.p-6
                 .card-title Create new account
                 .form-group
                   label.form-label Name
-                  input.form-control(v-model='name' type='text' placeholder='Enter name' name='name' required='')
+                  input.form-control(type='text' placeholder='Enter name' name='username' required='')
                 .form-group
                   label.form-label Email address
-                  input.form-control(v-model='email' type='email' placeholder='Enter email' name='email' required='')
+                  input.form-control(type='email' placeholder='Enter email' name='email' required='')
                 .form-group
                   label.form-label Password
-                  input.form-control(v-model='password' type='password' placeholder='Password' name='password' required='')
+                  input.form-control(type='password' placeholder='Password' name='password' required='')
                 .form-footer
-                  button.btn.btn-block(type='submit') Create new account
+                  button.btn.btn-primary.btn-block(type='submit') Create new account
             .text-center.text-muted.tagline
               | Already have account? 
               a.toggler(href="/login")  Sign in

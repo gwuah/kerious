@@ -89,22 +89,22 @@ userSchema.statics.findByToken = async function(token) {
 
 }
 
-// userSchema.statics.findByCredentials = async function(email, password) {
-// 	const User = this;
-// 	const user = await User.findOne({$or: [{ email: email }, { username: username }]});
+userSchema.statics.findByCredentials = async function(email, password) {
+	const User = this;
+	const user = await User.findOne({$or: [{ email: email }, { username: email }]});
 
-// 	if (!user) {
-// 		return undefined
-// 	}
+	if (!user) {
+		return undefined
+	}
 
-// 	const status = await util.comparePassword(password, user.password);
+	const status = await util.comparePassword(password, user.password);
 
-// 	if (status) {
-// 		return user
-// 	} else {
-// 		return undefined
-// 	}
-// }
+	if (status) {
+		return user
+	} else {
+		return undefined
+	}
+}
 
 userSchema.statics.findByUsername = async function(username) {
 	const User = this;

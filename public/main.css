@@ -1,1 +1,48 @@
-.mina { font-family: Mina } 
+.mina { font-family: Mina }
+
+* {
+    /* border: 1px solid red !important; */
+}
+
+header {
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-family: mina;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./img/jumbo-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-fc3 {
+    background-color: rgb(255, 204, 51);
+    outline-color: navy;
+}
+
+#logo-text {
+    font-size: 120px;
+    margin: 80px 0px 30px 0px;
+}
+
+header p:nth-of-type(2n) {
+    color: lime;
+}
+header button:nth-of-type(2n) {
+    margin-left: 10px;
+}
+
+/* our media queries */
+@media (max-width: 575.98px) {
+    #logo-text {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    p:nth-of-type(2n) {
+        color: lime;
+        font-size: 15px;
+    }
+      p:nth-of-type(1n) {
+        font-size: 18px;
+      }
+}

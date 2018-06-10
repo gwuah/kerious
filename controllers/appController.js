@@ -48,6 +48,10 @@ exports.loginPage = async (req, res) => {
     res.render("login")
 }
 
+exports.loginSuccessfulRedirect = async (req, res) => {
+    res.redirect('/profile');
+}
+
 exports.getProfile = async (req, res) => {
     res.sendFile(path.join(__dirname, "../client/profile.html"))
 }

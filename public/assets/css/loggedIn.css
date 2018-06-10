@@ -1,0 +1,48 @@
+* {
+	border: 1px solid red;
+	font-family: Mina;
+}
+
+#app {
+/*	border: 1px solid green;
+*/	max-width: 768px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#header {
+	text-align: center;
+	height: 37.5px;
+	background-color: #fff !important;
+	width: inherit;
+}
+
+#logo-icon {
+	font-size: 30px;
+	position: relative;
+	top: 4px;
+}
+
+.user-footer {
+	width: 100%;
+	position: fixed;
+  bottom: 0;
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,.1);
+  z-index: 1000;
+}
+
+.user-footer ul {
+	-webkit-padding-start: 0 !important;
+}
+
+.user-footer ul li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+

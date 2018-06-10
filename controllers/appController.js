@@ -52,6 +52,11 @@ exports.getProfile = async (req, res) => {
     res.sendFile(path.join(__dirname, "../client/profile.html"))
 }
 
+exports.loggedPage= async (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/logged_in.html"))
+}
+
+
 exports.signupPage = async (req, res) => {
     console.log("user wants to signup")
     res.render("signup")

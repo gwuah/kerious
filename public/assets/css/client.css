@@ -4,8 +4,8 @@
 }*/
 
 #app {
-	border: 1px solid green;
-	max-width: 768px;
+/*	border: 1px solid green;
+*/	max-width: 768px;
 	margin: 0 auto;
 	background-color: white;
 }
@@ -19,6 +19,8 @@
 
 #logo-icon {
 	font-size: 30px;
+	position: relative;
+	top: 4px;
 }
 
 #user-header {
@@ -86,9 +88,9 @@
 	height: 188px;
 	position: relative;
 	box-sizing: border-box;
-	padding: 4px;
-	border: 1px solid gold;
-}
+	padding: 7px;
+/*	border: 1px solid gold;
+*/}
 
 .question-input {
 	height: 105px;
@@ -108,8 +110,8 @@
 .ask-question-control-panel .form-group {
 	margin-top: 6px;
 	padding: 5px;
-	border: 2px solid pink;
-	position: relative;
+/*	border: 2px solid pink;
+*/	position: relative;
 }
 
 #post-btn {
@@ -117,6 +119,14 @@
 	position: absolute;
 	right: 10px;
 	bottom: 0;
+}
+
+.recent-answers {
+/*	background-color: red !important;
+*/}
+
+.answer-li {
+	border-bottom: 10px solid grey; 
 }
 
 

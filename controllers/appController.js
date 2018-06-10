@@ -2,6 +2,7 @@ const Question = require("../models/Question");
 const User = require("../models/User");
 const util = require("../util/util");
 const _ = require("../util/underscore");
+const path = require("path");
 
 
 getSender = async (user) => {
@@ -45,6 +46,10 @@ exports.getUsers = async (req, res) => {
 
 exports.loginPage = async (req, res) => {
     res.render("login")
+}
+
+exports.getProfile = async (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/profile.html"))
 }
 
 exports.signupPage = async (req, res) => {

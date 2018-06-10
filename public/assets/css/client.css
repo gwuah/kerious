@@ -1,0 +1,136 @@
+/** {
+	border: 1px solid red;
+	font-family: Mina;
+}*/
+
+#app {
+	border: 1px solid green;
+	max-width: 768px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#header {
+	text-align: center;
+	height: 37.5px;
+	background-color: #fff !important;
+	width: inherit;
+}
+
+#logo-icon {
+	font-size: 30px;
+}
+
+#user-header {
+	height: 200px;
+	position: relative;
+	background-size: cover;
+
+}
+
+.user-avatar {
+	height: 102px;
+  width: 102px;
+  position: absolute;
+  bottom: 9px;
+  left: 9px;
+  background: #fff;
+  border-radius: 10%;
+  border: 2px solid white;
+}
+
+.username {
+	display: inline-block;
+	position: absolute;
+	left: 120px;
+	bottom: 15px;
+	font-size: 18px;
+	color: white;
+}
+
+.user-stats section {
+	display: inline-block;
+}
+
+.follow-stats div {
+	display: inline-block;
+  height: 100%;
+  padding: .4em 1em;
+  cursor: pointer;
+  text-align: center;
+  font-weight: lighter
+}
+
+.k-title {
+	font-size: 15px;
+	display: block;
+}
+
+.k-value {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.social-links {
+	position: relative;
+	top: 16px;
+	float: right;
+	margin-right: 13px;
+}
+
+.social-links a i {
+	font-size: 20px;
+}
+
+.ask-question {
+	height: 188px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 4px;
+	border: 1px solid gold;
+}
+
+.question-input {
+	height: 105px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 8em;
+  padding: .5em;
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  resize: none;
+}
+
+.question-input:focus {
+  outline-color: #fc3;
+}
+
+.ask-question-control-panel .form-group {
+	margin-top: 6px;
+	padding: 5px;
+	border: 2px solid pink;
+	position: relative;
+}
+
+#post-btn {
+	font-family: Mina;
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

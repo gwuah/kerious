@@ -16,5 +16,7 @@ router.post("/signup", authController.registerUser);
 
 router.post("/ask", appController.askQuestion);
 
+router.get("/profile", appController.getProfile)
+
 // export the router
 module.exports = router;

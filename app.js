@@ -34,6 +34,7 @@ app.use(cookieParser());
 
 // static files
 app.use("/static", express.static(path.join(__dirname, "public")));
+app.use("/assets", express.static(path.join(__dirname, "public/assets")))
 
 // use our routes
 app.use('/', routes);

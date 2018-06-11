@@ -29,16 +29,436 @@
 
     <body>
     	<div id="app">
-    		<div id="header"><i id="logo-icon" class="fa fa-stethoscope"></i></div>
+    		<div id="header">
+                <ul>
+                    <li><a href="#"><i id="" class="fa fa-cog"></i></a></li>
+                    <li id="logo-li"><a href="#"><i id="logo-icon" class="fa fa-stethoscope"></i></a></li>
+                    <li><a href="#"><i id="" class="fa fa-pencil"></i></a></li>
+                </ul>
+            </div>
 
-        <div class="user-footer">
-          <ul>
-            <li><i class="fa fa-bell"></i></li>
-             <li><i class="fa fa-bell"></i></li>
-            <li><i class="fa fa-bell"></i></li>
+            <div id="view">
+                <div class="k-modal-bg">
+                    <div class="k-modal">
+                        <p>sdisdhsdhsidhsdshushudfufdufudfuddufgd</p>
+                        
+                            <textarea id="reply-box"></textarea>
+                        <div class="form-group">
+                            <label class="custom-switch">
+                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                              <span class="custom-switch-indicator"></span>
+                              <span class="custom-switch-description">Anonymous</span>
+                            </label>
 
-          </ul>
-        </div>
+                            <label class="custom-switch">
+                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                              <span class="custom-switch-indicator"></span>
+                              <span class="custom-switch-description">Anonymous</span>
+                            </label>
+
+                            <label class="custom-switch">
+                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                              <span class="custom-switch-indicator"></span>
+                              <span class="custom-switch-description">Anonymous</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="notifications">
+                    <div class="notification">
+                        <ul class="question-holder">
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="notif-type-text">Griffith replied your message <i class="fa fa-hand-o-down"></i>
+                                </div>
+                              <div class="media">
+                                <div class="media-object avatar avatar-md mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div>
+                                <div class="media-body">
+                                  <div class="media-heading">
+                                    <h5>Peter Richards</h5>
+                                  </div>
+                                  <div>
+                                    Donec ullamcorper nulla non metus auctor fringilla.
+                                  </div>
+                                  <ul class="media-list">
+                                    <li class="media mt-4">
+                                      <!-- <div class="media-object avatar mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div> -->
+                                      <div class="media-body">
+                                        <strong>Wayne Holland: </strong>
+                                        auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notification">
+                        <ul class="question-holder">
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="notif-type-text">Griffith replied your message <i class="fa fa-hand-o-down"></i>
+                                </div>
+                              <div class="media">
+                                <div class="media-object avatar avatar-md mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div>
+                                <div class="media-body">
+                                  <div class="media-heading">
+                                    <h5>Peter Richards</h5>
+                                  </div>
+                                  <div>
+                                    Donec ullamcorper nulla non metus auctor fringilla.
+                                  </div>
+                                  <ul class="media-list">
+                                    <li class="media mt-4">
+                                      <!-- <div class="media-object avatar mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div> -->
+                                      <div class="media-body">
+                                        <strong>Wayne Holland: </strong>
+                                        auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notification">
+                        <ul class="question-holder">
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="notif-type-text">Griffith replied your message <i class="fa fa-hand-o-down"></i>
+                                </div>
+                              <div class="media">
+                                <div class="media-object avatar avatar-md mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div>
+                                <div class="media-body">
+                                  <div class="media-heading">
+                                    <h5>Peter Richards</h5>
+                                  </div>
+                                  <div>
+                                    Donec ullamcorper nulla non metus auctor fringilla.
+                                  </div>
+                                  <ul class="media-list">
+                                    <li class="media mt-4">
+                                      <!-- <div class="media-object avatar mr-4" style="background-image: url(static/img/jumbo-5.jpg)"></div> -->
+                                      <div class="media-body">
+                                        <strong>Wayne Holland: </strong>
+                                        auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- messages recieved -->
+                <div id="messages" class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card">
+                                <div class="card-status bg-orange"></div>
+                              <div class="card-header qn-title-container">
+                                <img class="qn-user-avatar" src="static/img/jumbo-5.jpg">
+                                <span class="card-title qn-title">gwuah asked ...</span>
+                              </div>
+                              <div class="card-body qn-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt, iste, itaque minima neque pariatur perferendis sed suscipit velit vitae voluptatem. A consequuntur, deserunt eaque error nulla temporibus!
+                              </div>
+                              <div class="card-footer qn-footer">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-reply"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shield"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-remove"></i></a>
+                                    </li>
+                                    
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- search menu -->
+
+                <div id="search-menu-container">
+                    <div id="search-menu">
+                        <div class="search-box">
+                            <div class="input-icon">
+                                <span class="input-icon-addon">
+                                  <i class="fe fe-user"></i>
+                                </span>
+                                <input id="search-input" type="text" class="form-control" placeholder="Username">
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="search-results">
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                        <div class="search-user">
+                            <a href="#">
+                                <img class="search-user-img" src="/static/img/jumbo-5.jpg">
+                                <p class="search-user-name">gwuah</p><br>
+                                <p class="search-user-stat">24 answered</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-profile">
+                    <div class="recent-answers">
+                        <ul class="list-group card-list-group">
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="media">
+                                    <div class="media-object avatar avatar-md mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <h5>Peter Richards</h5>
+                                        </div>
+                                        <div>
+                                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                        </div>
+                                        <ul class="media-list">
+                                            <li class="media mt-4">
+                                                <div class="media-object avatar mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                                <div class="media-body"><strong>Wayne Holland: </strong> auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="media">
+                                    <div class="media-object avatar avatar-md mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <h5>Peter Richards</h5>
+                                        </div>
+                                        <div>
+                                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                        </div>
+                                        <ul class="media-list">
+                                            <li class="media mt-4">
+                                                <div class="media-object avatar mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                                <div class="media-body"><strong>Wayne Holland: </strong> auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="media">
+                                    <div class="media-object avatar avatar-md mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <h5>Peter Richards</h5>
+                                        </div>
+                                        <div>
+                                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                        </div>
+                                        <ul class="media-list">
+                                            <li class="media mt-4">
+                                                <div class="media-object avatar mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                                <div class="media-body"><strong>Wayne Holland: </strong> auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item py-5 answer-li">
+                                <div class="media">
+                                    <div class="media-object avatar avatar-md mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                    <div class="media-body">
+                                        <div class="media-heading">
+                                            <h5>Peter Richards</h5>
+                                        </div>
+                                        <div>
+                                            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                                        </div>
+                                        <ul class="media-list">
+                                            <li class="media mt-4">
+                                                <div class="media-object avatar mr-4" style="background-image: url(&quot;static/img/jumbo-5.jpg&quot;);"></div>
+                                                <div class="media-body"><strong>Wayne Holland: </strong> auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+              </div>
+
+            <div id="user-footer">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-user-o"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li>
+                        <a href="#" class="unread-nav">
+                            <i class="fa fa-envelope-open-o"></i>
+                            <span class="counter badge badge-primary">434</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="unread-nav">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="counter badge badge-primary">434</span>
+                        </a></li>
+                  </ul>
+            </div>
     	</div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>

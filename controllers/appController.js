@@ -39,6 +39,8 @@ exports.askQuestion = async (req, res) => {
 
 }
 
+// exports.createNotif = async 
+
 exports.getUsers = async (req, res) => {
     const users = await  User.find({});
     res.json(users)
@@ -58,6 +60,10 @@ exports.getProfile = async (req, res) => {
 
 exports.loggedPage= async (req, res) => {
     res.sendFile(path.join(__dirname, "../client/logged_in.html"))
+}
+
+exports.loggedVue = async(req, res) => {
+     res.sendFile(path.join(__dirname, "../client/logged_in_vue.html"))
 }
 
 

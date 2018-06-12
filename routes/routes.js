@@ -22,8 +22,13 @@ router.post("/signup", authController.registerUser);
 
 router.post("/ask", appController.askQuestion);
 
+// router.get("/notifs", appController.getNotifs)
+// router.post("/notifs", appController.createNotif)
+
 router.get("/profile", appController.getProfile)
 router.get("/logged", appController.loggedPage)
+router.get("/lvue", appController.loggedVue)
+
 
 // export the router
 module.exports = router;

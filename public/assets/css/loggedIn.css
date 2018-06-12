@@ -11,14 +11,21 @@
 	margin-bottom: 47px;
 }
 
+#view {
+	margin-top: 43px;
+}
+
 #header {
 	text-align: center;
 	height: 43px;
 	background-color: #fff !important;
-	width: inherit;
+	width: 100%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
 	padding: 2px;
+	position: fixed;
+	top: 0px;
+	z-index: 99999;
 }
 
 #header ul {
@@ -73,6 +80,11 @@
 	font-size: 18px;
 }
 
+#user-footer ul li a {
+	display: inline-block;
+	width: 100% !important;
+}
+
 .unread-nav {
 	position: relative;
 }
@@ -80,8 +92,8 @@
 .counter {
 	border-radius: 50%;
 	position: absolute;
-	bottom: 8px;
-	left: 10px;
+	top: 12px;
+	right: 11px;
 }
 
 .MODAL {
@@ -102,9 +114,9 @@
   -ms-flex-align: center;
   align-items: center;
 }
-.notifications {
+/*.notifications {
 	display: none;
-}
+}*/
 
 .notification {
 	border-top: 5px solid rgba(0, 0, 0, 0.1);	
@@ -132,6 +144,7 @@
 
 #messages {
 	margin-top: 20px;
+	padding-top: 30px;
 }
 
 .qn-user-avatar {
@@ -168,12 +181,16 @@
 	width: 32%;
 }
 
-#messages {
+/*#messages {
 	display: none;
 }
 
 #search-menu-container {
 	display: none;
+}*/
+
+.answer-li {
+	padding: 18px 18px !important;
 }
 
 #search-menu {
@@ -328,4 +345,18 @@
 
 .reply-btn {
 	float: right;
+}
+
+#user-footer ul li {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	font-size: 18px;
+}
+
+.router-link-exact-active {
+	width: 100% !important;
+  border-top: 3px solid #467fcf;
+/*  background-color: red;
+*/  /*padding-left: 50px;*/
 }

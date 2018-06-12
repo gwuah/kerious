@@ -1,8 +1,8 @@
 /** {
 	border: 1px solid red;
 	font-family: Mina;
-}*/
-
+}
+*/
 #app {
 /*	border: 1px solid green;
 */	max-width: 768px;
@@ -247,8 +247,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 5%;
-  display: -webkit-box;
+/*  padding: 5%;
+*/  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -262,7 +262,7 @@
 
 .k-modal {
 	position: relative;
-  max-width: 100%;
+  width: 768px !important;
   max-height: 100%;
   border-radius: 4px;
   overflow: hidden;
@@ -277,6 +277,8 @@
   -ms-flex-pack: center;
   justify-content: center;
   background-color: white;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 #reply-box {
@@ -287,4 +289,43 @@
   padding: .5em;
   height: 10em;
   width: 90%;
+}
+
+.reply-footer {
+	box-sizing: border-box;
+	padding: 10px 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.reply-to {
+	padding: 13px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+
+.rt-text {
+	font-weight: bold;
+	font-family: Roboto;
+}
+
+.reply-footer .custom-switch {
+	position: relative;
+	top: 4px;
+}
+
+.reply-footer .custom-switch-description {
+	font-size: 18px;
+}
+
+.reply-footer .custom-switch-input:checked ~ .custom-switch-description {
+    color: #4ab3f4 !important;
+}
+
+.reply-footer .custom-switch-input:checked ~ .custom-switch-indicator {
+    background: #4ab3f4 !important;
+}
+
+.reply-btn {
+	float: right;
 }

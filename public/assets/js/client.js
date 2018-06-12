@@ -1,6 +1,7 @@
 vm = new Vue({
     el: "#app",
     data: {
-        name: "profile"
+        name: "profile",
+        modal: false
     }
 }) 

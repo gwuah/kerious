@@ -33,35 +33,28 @@
                 <ul>
                     <li><a href="#"><i id="" class="fa fa-cog"></i></a></li>
                     <li id="logo-li"><a href="#"><i id="logo-icon" class="fa fa-stethoscope"></i></a></li>
-                    <li><a href="#"><i id="" class="fa fa-pencil"></i></a></li>
+                    <li><a href="#" v-on:click="modal ? modal = false : modal = true"><i id="" class="fa fa-pencil"></i></a></li>
                 </ul>
             </div>
 
             <div id="view">
-                <div class="k-modal-bg">
+                <div v-if="modal" class="k-modal-bg" v-on:click="modal ? modal = false : modal = true">
                     <div class="k-modal">
-                        <p>sdisdhsdhsidhsdshushudfufdufudfuddufgd</p>
+                        <p class="reply-to">
+                            <span class="rt-text">Replying to :</span>
+                            <span>sdisdhsdsdjidfidifdfhdifhidfdhfodfidfhodhfodhfdfodhfd</span>
+                        </p>
                         
                             <textarea id="reply-box"></textarea>
-                        <div class="form-group">
-                            <label class="custom-switch">
-                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                              <span class="custom-switch-indicator"></span>
-                              <span class="custom-switch-description">Anonymous</span>
-                            </label>
+                            <div class="form-group reply-footer">
+                                <label class="custom-switch">
+                                  <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                                  <span class="custom-switch-indicator"></span>
+                                  <span class="custom-switch-description"><i class="fa fa-twitter"></i></span>
+                                </label>
 
-                            <label class="custom-switch">
-                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                              <span class="custom-switch-indicator"></span>
-                              <span class="custom-switch-description">Anonymous</span>
-                            </label>
-
-                            <label class="custom-switch">
-                              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
-                              <span class="custom-switch-indicator"></span>
-                              <span class="custom-switch-description">Anonymous</span>
-                            </label>
-                        </div>
+                                <button class="btn btn-medium btn-blue reply-btn">Reply</button>
+                            </div>
                     </div>
                     
                 </div>
